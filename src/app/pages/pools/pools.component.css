@@ -1,0 +1,432 @@
+.contenedor-pool{
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-pool .table{
+    display: flex;
+}
+
+.button{
+    margin: 10px 0;
+}
+.button button{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(52, 101, 117);
+    background-color: #F8F9F9;
+}
+.button button svg{
+    margin-right: 10px;
+    fill: #F1C40F;
+    width: 20px;
+    height: 20px;
+}
+.button button:hover{
+    background-color: #F8F9F9;
+    border: 1px solid rgb(52, 101, 117);
+    transition: .2s;
+}
+
+.contenedor-pool .table table{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.contenedor-pool .table table thead{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contenedor-pool .table table thead tr{
+    display: flex;
+    align-items: center;
+    background-color: rgb(52, 101, 117);    
+}
+
+.contenedor-pool .table table thead tr th{
+    display: flex;
+    padding: 5px 4px;
+    font-size: 12px;    
+    min-height: 50px;
+    min-width: 180px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 5px rgba(0, 0, 0, 0.1);
+}
+.contenedor-pool .table table thead tr th:first-of-type{
+    min-width: 50px;
+}
+
+.contenedor-pool .table table tbody{
+    display: flex;
+    flex-flow: column;
+}
+
+.contenedor-pool .table table tbody tr{
+    display: flex;
+    align-items: center;
+}
+.contenedor-pool .table table tbody tr td{
+    display: flex;
+    padding: 5px 4px;
+    font-size: 12px;    
+    min-height: 50px;
+    min-width: 180px;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #F8F9F9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}   
+
+.contenedor-pool .table table tbody tr td:first-of-type{
+    min-width: 50px;
+}
+
+.contenedor-pool .table table tbody tr td img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.enlarged-image-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .enlarged-image-container img {
+    max-width: 400px;
+    max-height: 400px; 
+    cursor: pointer;
+  }
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-thumb  {
+    height: 4px;
+    width: 4px;
+    background-color: rgb(52, 101, 117);
+    border-radius: 6px;
+  }
+
+
+  .modalPool{
+    display: flex;
+    background-color: #F8F9F9;
+    width: 70%;
+    margin: 20px auto;
+  }
+  .modalPool form{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .modalPool form .divPoolA{
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .modalPool form .divPoolA h5{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    color: #F1C40F;
+    font-weight: 400;
+  }
+  .modalPool form .divPoolA .divPoolAFirst{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    flex-flow: column;
+    margin-bottom: 20px;
+  }
+
+  .modalPool form .divPoolA .divPoolASecond{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    flex-flow: column;
+  }
+
+  .modalPool form .divPoolA .divPoolAFirst label{
+    margin-bottom: 5px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .modalPool form .divPoolA .divPoolAFirst input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #F1C40F;
+    padding: 5px;
+    font-size: 16px;
+    background-color: transparent;
+  }
+
+  .modalPool form .divPoolA .divPoolASecond label{
+    margin-bottom: 5px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .modalPool form .divPoolA .divPoolASecond input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #F1C40F;
+    padding: 5px;
+    font-size: 16px;
+    background-color: transparent;
+  }
+
+  .modalPool form .divPoolB{
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .modalPool form .divPoolB h5{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    color: rgb(52, 101, 117);
+    font-weight: 400;
+  }
+
+  .modalPool form .divPoolB .divPoolBFirst{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    flex-flow: column;
+    margin-bottom: 20px
+  }
+
+  .modalPool form .divPoolB .divPoolBSecond{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    flex-flow: column;
+  }
+
+  .modalPool form .divPoolB .divPoolBFirst label{
+    margin-bottom: 5px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .modalPool form .divPoolB .divPoolBFirst input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(52, 101, 117)  ;
+    padding: 5px;
+    font-size: 16px;
+    background-color: transparent;
+  }
+
+  .modalPool form .divPoolB .divPoolBSecond label{
+    margin-bottom: 5px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .modalPool form .divPoolB .divPoolBSecond input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(52, 101, 117);
+    padding: 5px;
+    font-size: 16px;
+    background-color: transparent;
+  }
+
+  .modalPool form .v_fisica{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .modalPool form .v_fisica .v_fisica_1{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #F1C40F;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .modalPool form .v_fisica .v_fisica_1 label{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+  }
+  .modalPool form .v_fisica .v_fisica_1 input{
+    border-radius: 10px;
+    background-color: #F8F9F9;
+    padding: 5px;
+  }
+
+
+  .modalPool form .v_fisica .v_fisica_2{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid rgb(52, 101, 117);
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .modalPool form .v_fisica .v_fisica_2 label{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+  }
+  .modalPool form .v_fisica .v_fisica_2 input{
+    border-radius: 10px;
+    background-color: #F8F9F9;
+    padding: 5px;
+  }
+
+  .modalPool form .v_fisica .v_fisica_1 .img_v_fisica_1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modalPool form .v_fisica .v_fisica_1 .img_v_fisica_1 img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .modalPool form .v_fisica .v_fisica_2 .img_v_fisica_2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modalPool form .v_fisica .v_fisica_2 .img_v_fisica_2 img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+
+  .modalPool form .submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .modalPool form .submit input{
+    padding: 10px 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(52, 101, 117);
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+  }
+
+  .modalPool form .submit input:hover{
+    background-color: rgb(52, 101, 117);
+    color: #F8F9F9;
+    transition: .3  s;
+  }
+
+
+  .alert-success{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .charts{
+    display: flex;
+    width: 50%;
+    margin: 20px 0;
+  }
+  #chart {
+    background-color: #F8F9F9;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+  }
+
+.alert-success.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+  .alert-success h5{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    justify-content: center;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 2em 0.1cqb;
+    background-color: rgb(37, 236, 169);
+  }
+
+  .alert-success h5 svg{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    fill: rgba(0, 0, 0, 0.9);
+    
+  }

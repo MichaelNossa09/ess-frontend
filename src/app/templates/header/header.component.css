@@ -1,0 +1,85 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: calc(100% - 240px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    background-color: #EBEDEF;
+    margin-left: 240px;
+}
+
+.header .search{
+    display: flex;
+    align-items: center;
+    position: relative;    
+}
+
+.header .search svg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+.header .search input{
+    outline: none;
+    padding: 10px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 300px;
+}
+
+.noti{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.noti .campana{
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%;
+    margin-right: 20px; 
+    cursor: pointer;
+}
+
+.noti .campana svg{
+    font-size: 15px;
+}
+.noti .campana:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+.noti .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    min-width: 160px;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.noti .user:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+.noti .user .photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.noti .user .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
